@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap" 
+    rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-wrapper">
+            <a href="#"><img src="./img/logo.jpg" alt=""></a>
+        </div>
+        <nav class="site-nav">
+            <ul class="nav-ul">
+                <li class="nav-li-item">
+                    <a class="nav-li-link" href="#">О нас</a>   
+                </li>
+                <li class="nav-li-item">
+                    <a class="nav-li-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-li-item">
+                    <a class="nav-li-link" href="#">Работы</a>
+                </li>
+                <li class="nav-li-item">
+                    <a class="nav-li-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-li-item">
+                    <a class="nav-li-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    
+    </header>
+    <div class="section-1">
+        <div class="sec-1-container">
+            <div class="h1-sec-1">
+                <h1>ТЕКСТ О КОМПАНИИ</h1>
+                <h1>МОСКВА</h1>    
+            </div>
+            <div class="p-sec-1">
+                <p>Текст, почему стоит загонять к нам тачки и нести свои денюжки</p>
+            </div>
+            <div class="sec-1-button">
+                <button class="open-popup">Записаться</button></a>
+            </div>
+            <div class="icons-sec-1">
+                <a href="#"><img src="./img/icons8-телефон-32.png" alt=""></a>
+                <a href="#"><img src="./img/icons8-логотип-вконтакте-32.png" alt=""></a>
+                <a href="#"><img src="./img/icons8-телеграмма-32 (1).png" alt=""></a>
+                <a href="#"><img src="./img/icons8-почта-32.png" alt=""></a>
+                <a href="#"><img src="./img/icons8-whatsapp-32.png" alt=""></a>
+            </div>
+        </div>  
+    </div>
+    <div class="popup-bg">
+        <div class="popup">
+            <img class="close-popup" src="./img/icons8-крестик-78.png" alt="">
+            <form class="form">
+   
+               <!-- Hidden Required Fields -->
+               <input type="hidden" name="project_name" value="Laibauto">
+               <input type="hidden" name="admin_email" value="Lizamus240594@mail.ru">
+               <input type="hidden" name="form_subject" value="Form Subject">
+               <!-- END Hidden Required Fields -->
+               <h3>Оставьте заявку и мы с Вами свяжемся</h3>
+               
+               <input type="text" name="Name" placeholder="Ваше имя" required><br>
+               <input type="text" name="Phone" placeholder="Номер телефона" required><br>
+               <input class="input_text" type="text" name="Text" placeholder="Какую услугу хотите получить?"><br>
+               <button>Отправить</button>
+       
+           </form>
+        </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="./app.js"></script>
+<script>$('.open-popup').click(function() {
+    $('.popup-bg').fadeIn(900);
+    $('html').addClass('no-scroll');
+});
+
+$('.close-popup').click(function() {
+    $('.popup-bg').fadeOut(900);
+    $('html').removeClass('no-scroll');
+});
+</script>
+   
+
+    
+</body>
+</html>
